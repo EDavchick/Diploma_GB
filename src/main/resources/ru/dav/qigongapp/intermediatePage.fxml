@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="intermediatePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dav.qigongapp.controllers.IntermediateController">
+   <children>
+      <ImageView fx:id="backHome" fitHeight="18.0" fitWidth="25.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/home.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="323.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercises for intermediate" wrappingWidth="253.037109375">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="31.0" layoutY="43.0" prefHeight="101.0" prefWidth="625.0" promptText="For Intermediate" text="The intermediate level in Qigong involves more advanced techniques building upon the basics learned in the beginner level. Practitioners focus on deepening their understanding of energy cultivation and refining their movements. The regulation and control of the breath is the foundation for preserving, cultivating, storing, transforming, and circulating vital energy (qi)." wrapText="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="12.0" />
+         </font>
+      </TextArea>
+      <StackPane fx:id="stackPane" layoutX="39.0" layoutY="167.0" prefHeight="320.0" prefWidth="530.0">
+         <children>
+            <Pagination fx:id="paginationList" currentPageIndex="1" maxPageIndicatorCount="5" pageCount="10" prefHeight="321.0" prefWidth="530.0" />
+            <ImageView fx:id="img01" fitHeight="250.0" fitWidth="366.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/pic01.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img02" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/fon2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img03" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/img09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img04" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/fon4.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img05" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/img10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img06" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/pic03.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img07" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/pic05.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img08" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/pic07.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img09" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/pic10.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img10" fitHeight="250.0" fitWidth="366.0" layoutX="92.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/intermediate/pic13.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

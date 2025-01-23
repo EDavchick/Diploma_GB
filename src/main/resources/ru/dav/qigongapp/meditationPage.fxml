@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="meditationPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dav.qigongapp.controllers.MeditationController">
+   <children>
+      <ImageView fx:id="backHome" fitHeight="18.0" fitWidth="25.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/home.png" />
+         </image>
+      </ImageView>
+      <Text fill="#090909" layoutX="411.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meditation for all levels">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+      </Text>
+
+      <Button fx:id="playButton" layoutX="26.0" layoutY="403.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="42.0" prefWidth="73.0" text="PLAY">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="26.0" layoutY="47.0" prefHeight="222.0" prefWidth="622.0" style="-fx-background-color: #c3dd92;" text="Sound meditation has a multitude of benefits that can make a real impact on your well-being:&#10;Reduces Stress and Anxiety: Sound meditation helps calm the mind by using soothing sounds and vibrations. It's been found to reduce stress levels and alleviate anxiety1.&#10;Enhances Relaxation: By focusing on the sounds, participants can achieve deep relaxation more easily. This helps in quieting the mind compared to traditional meditation methods1.&#10;Improves Sleep Quality: Regular sound meditation practice has been linked to better sleep quality and reduced insomnia. The soothing sounds help prepare the mind and body for restful sleep1.&#10;Boosts Mental Clarity: The vibrations and sounds help clear mental clutter, enhancing focus and mental clarity. It’s beneficial for those who find their minds constantly wandering.&#10;Promotes Emotional Well-being: Sound meditation can significantly reduce feelings of tension, anger, and fatigue, leading to improved mood and overall emotional well-being.&#10;Physical Health Benefits: Some studies indicate that sound meditation can lower blood pressure, improve circulation, and even reduce physical pain.&#10;Different instruments can be used in sound meditation, such as Tibetan singing bowls, gongs, and chimes2. Each instrument has unique vibrations and tones that contribute to the meditative experience." wrapText="true">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="9.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="songLabel" alignment="CENTER" layoutY="276.0" prefHeight="103.0" prefWidth="666.0" text="Sounds of natural">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="20.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songProgressBar" layoutX="26.0" layoutY="378.0" prefHeight="25.0" prefWidth="622.0" progress="0.0" />
+      <Button fx:id="pauseButton" layoutX="99.0" layoutY="403.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="42.0" prefWidth="66.0" text="PAUSE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="stopButton" layoutX="387.0" layoutY="403.0" mnemonicParsing="false" onAction="#stopMedia" prefHeight="42.0" prefWidth="66.0" text="STOP">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="165.0" layoutY="403.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="42.0" prefWidth="66.0" text="RESET">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousButton" layoutX="231.0" layoutY="403.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="42.0" prefWidth="90.0" text="PREVIOUS">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextButton" layoutX="321.0" layoutY="403.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="42.0" prefWidth="66.0" text="NEXT">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="speedBox" layoutX="453.0" layoutY="403.0" onAction="#changeSpeed" prefHeight="42.0" prefWidth="90.0" promptText="SPEED" />
+      <Slider fx:id="volumeSlider" layoutX="545.0" layoutY="417.0" prefHeight="14.0" prefWidth="105.0" value="50.0" />
+
+   </children>
+</AnchorPane>
