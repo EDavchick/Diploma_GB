@@ -20,14 +20,14 @@ public class QigongApp extends Application {
         stage.setScene(scene);
         stage.show();
 
-        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-            @Override
-            public void handle(WindowEvent windowEvent) {
-                Platform.exit();
-//                System.exit(0);
-                windowEvent.consume();
-            }
-        });
+//        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+//            @Override
+//            public void handle(WindowEvent windowEvent) {
+//                Platform.exit();
+////                System.exit(0);
+//                windowEvent.consume();
+//            }
+//        });
     }
 
     public static void main(String[] args) {
